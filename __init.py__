@@ -1,0 +1,2 @@
+from spatial_kriging_1D.py import *
+from ST_window_kriging.py  import * 
