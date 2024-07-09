@@ -1,4 +1,7 @@
-###transfer Ordinary  Kriging and functions here ..#
+### Functions for processing geospatial data with 1D Kriging and Co-Kriging, e.g. window-kriging-approach (-->  examples)
+### Part of the package "circos_tools"
+### install from git with  pip install git+https://gitlab.lrz.de/00000000014B1C62/kriging-tools.git
+### M.-C. Juhl, 2024
 
 import xarray as xr 
 import numpy as np 
