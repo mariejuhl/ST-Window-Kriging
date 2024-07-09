@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="kriging_tools",
-    version="0.0",
+    #version="",
     packages=find_packages(),
     install_requires=[
         # List your package dependencies here, e.g., 'numpy'
