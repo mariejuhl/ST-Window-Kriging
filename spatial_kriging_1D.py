@@ -138,7 +138,46 @@ def OrdinaryKriging(l3, grid, fit1):
 
     return Z_pred, Z_pred_error
     
+
+
+
+def latlon_bias_correction(data,var,return_functions, plot):
+
+    ### corrects linearly for the latitude longitude plane (latiude*longitude) --> can be changed to seperate
+    ### impplemented for dataframe now, uncommented functions fot xarray 
+    ### returns fit_function if eturn_functions == True to apply to SLA and back-transform
+    ### plot function to be implemented 
+
+    plot             == False 
+    #return_functions == False
     
+    #if ('lat' in data.coords) & ('latitude' not in data.coords) & ('lon' in data.coords) & ('longitude' not in data.coords):
+    #    data = data.rename({'lat': 'latitude','lon': 'longitude'})
+    #    print('Obacht: Renamed lat/lon --> latitude/longitude in the output!')        
+
+
+    """fit_lat      = np.polyfit(data.latitude, data[var].values-data[var].values.mean(), 1)
+    fit_func_lat = np.poly1d(fit_lat)
+
+
+    fit_lon      = np.polyfit(data.longitude, data[var].values-data[var].values.mean(), 1)
+    fit_func_lon = np.poly1d(fit_lon)
+
+    data[var] = (data[var]-data[var].values.mean()) - fit_func_lat(data.latitude) - fit_func_lon(data.longitude) +data[var].values.mean()"""
+
+
+    fit_lon      = np.polyfit(data.longitude*data.latitude, data[var].values-data[var].mean(), 1)
+    fit_func_lon = np.poly1d(fit_lon)
+
+    data[var] = (data[var]-data[var].mean()) - fit_func_lon(data.longitude*data.latitude) +data[var].mean()
+
+    if return_functions == False:
+         return data
+    
+    if return_functions == True:
+          return data, fit_lon
+
+###################################################################  NOT IN USE  ####################################################          
 """def scipy_box_cox(x):
     from scipy import stats
     #x = x[~np.isnan(x)]
