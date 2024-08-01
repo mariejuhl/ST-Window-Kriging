@@ -1,1 +1,1 @@
-## install everything and have python (?)
+## list package and python version here
