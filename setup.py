@@ -1,22 +1,22 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="my-package",
-    version="0.1",
+    name="kriging_tools",
+    #version="",
     packages=find_packages(),
     install_requires=[
-        'numpy',  # Example of dependency
-        'pandas',  # Example of dependency
+        # List your package dependencies here, e.g., 'numpy'
     ],
-    author="Your Name",
-    author_email="your_email@example.com",
-    description="A brief description of your package",
+    author="M.-C.Juhl",
+    author_email="mariechristin.juhl@tum.de",
+    description="Tools needed in the CIRCOS-project: Estimating Correlation and coherence of gridded data; perform different forms of Kriging and Co-Kriging; Validation of Grids against tide gauges ",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/username/my-package",
+    url = "https://gitlab.lrz.de/00000000014B1C62/kriging-tools/", 
     classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",  # Replace with your license
+        "Operating System :: OS Independent",
     ],
+    python_requires='>=3.6',
 )
