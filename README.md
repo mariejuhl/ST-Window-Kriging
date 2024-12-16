@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ### Usage 
 #### Dependencies
-Dependecies need to be installed according to the Installation step above. In the main Notebook  **ST-Window-Kriging.ipynb** dependeces are loaded under **1. Import Dependencies**, where the main function are loaded from **tools.py**. 
+Dependecies need to be installed according to the Installation step above. In the main Notebook  **ST-Window-Kriging.ipynb** dependencies are loaded under **1. Import Dependencies**, where the main function are loaded from **tools.py**. 
 
 #### Input data:
 Input data are Sea Level Anomalies from along-track satellite altimetry (L3) in 1Hz, downloaded from Copernicus Marine Service (https://doi.org/10.48670/moi-00146). We collected them in a dataframe containing, e.g. for California all data within the year 2018 for the study region $\pm$2° latitude and longitude to avoid boundary effects. Input data used in this study are stored in the dorectory sample data. Data are loaded in the Notebook and prepared under **2. Input data, Area Selection, Mask and Subsampling**. '
