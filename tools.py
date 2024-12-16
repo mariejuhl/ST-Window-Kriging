@@ -44,7 +44,7 @@ def sum_metric_model(xy, sill1, range_1, nugget_1, sill2, range_2,nugget_2,range
     return arr 
 
 
-def fit_empirical_variogram(xtime,l3,grid=None, n_days=5, hs_range=(0, 220, 11), ht_range=(0, 5, 11), estimator='matheron', func=None, plot=False, Kriging =False,exact= True, save_as_netcdf=None, save_as_csv=None):
+def ST_Window_Kriging(xtime,l3,grid=None, n_days=5, hs_range=(0, 220, 11), ht_range=(0, 5, 11), estimator='matheron', func=None, plot=False, Kriging =False,exact= True, save_as_netcdf=None, save_as_csv=None):
     """
     Fits an empirical variogram with temporal and spatial lags using curve fitting.
 
