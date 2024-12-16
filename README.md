@@ -1,5 +1,5 @@
 # **ST-Window Kriging** 
-### **Spatio Temporal Window Kriging** for mapping daily Sea Level Anomalies from satellite altimetry along-track data (L3 $\rarr$ L4)
+### **Spatio Temporal Window Kriging** for mapping daily Sea Level Anomalies from satellite altimetry along-track data (L3 to L4)
 
 
 ### Description 
@@ -11,8 +11,8 @@ Gridded data from the approach are stored in: (SEANOE LINK ) and can be reproduc
 ### Installation 
 Using git and pip: 
 
-git clone https://github.com/mariejuhl/ST-Window-Kriging
-cd ST-Window-Kriging
+git clone https://github.com/mariejuhl/ST-Window-Kriging \\
+cd ST-Window-Kriging \\
 pip install -r requirements.txt
 
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 Dependecies need to be installed according to the Installation step above. In the main Notebook  **ST-Window-Kriging.ipynb** dependeces are loaded under **1. Import Dependencies**, where the main function are loaded from **tools.py**. 
 
 #### Input data:
-Input data are Sea Level Anomalies from along-track satellite altimetry (L3) in 1Hz, downloaded from Copernicus Marine Service (https://doi.org/10.48670/moi-00146). We collected them in a dataframe containing, e.g. for California all data within the year 2018 for the study region $\pm$ 2° latitude and longitude to avoid boundary effects. Input data used in this study are stored in the dorectory sample data. Data are loaded in the Notebook and prepared under **2. Input data, Area Selection, Mask and Subsampling**. '
+Input data are Sea Level Anomalies from along-track satellite altimetry (L3) in 1Hz, downloaded from Copernicus Marine Service (https://doi.org/10.48670/moi-00146). We collected them in a dataframe containing, e.g. for California all data within the year 2018 for the study region $\pm$2° latitude and longitude to avoid boundary effects. Input data used in this study are stored in the dorectory sample data. Data are loaded in the Notebook and prepared under **2. Input data, Area Selection, Mask and Subsampling**. '
 
 #### Variogram 
 In **ST-Window-Kriging.ipynb** variogram modelling is integrated in ST_Window_Kriging function. Select Kriging = False to only fir variogram. Otherwise the variogram will be build (matheron semi-variogram) and fitted (sum-metric model) using the ranges in time (ht_range) and space (hs_range). If plot is set to True, experimental variogram and model are plotted for each day. Since this process can take a while a processing bar will show the progress of the Kriging.
