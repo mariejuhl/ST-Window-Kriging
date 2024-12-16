@@ -3,7 +3,7 @@
 
 
 ### Description 
-The project **ST-Window-Kriging** available in Jupyter Notebook format can be used to produce daily Sea Level Anomalie Grids from along-track satellite altimetry data for California in 2018. The approach is based on Ordinary Kriging in a moving $\pm$ 5 days time window around the target day. Kriging is done building a empirical variogram from the observations (along-track data) and fitting a sum-metric semi-variogram model, which is the base for the Kriging matrix. The approach uses along-track data from CMEMS as input data (https://doi.org/10.48670/moi-00146) and produced gridded data icopmarable to their Maps (https://doi.org/10.48670/moi-00149).\\
+The project **ST-Window-Kriging** available in Jupyter Notebook format can be used to produce daily Sea Level Anomalie Grids from along-track satellite altimetry data for California in 2018. The approach is based on Ordinary Kriging in a moving $\pm$ 5 days time window around the target day. Kriging is done building a empirical variogram from the observations (along-track data) and fitting a sum-metric semi-variogram model, which is the base for the Kriging matrix. The approach uses along-track data from CMEMS as input data (https://doi.org/10.48670/moi-00146) and produced gridded data icopmarable to their Maps (https://doi.org/10.48670/moi-00149).
 
 Gridded data from the approach are stored in: (SEANOE LINK ) and can be reproduced with the jupyterb notebook and the prepared 'sample data'.
 
@@ -11,8 +11,10 @@ Gridded data from the approach are stored in: (SEANOE LINK ) and can be reproduc
 ### Installation 
 Using git and pip: 
 
-git clone https://github.com/mariejuhl/ST-Window-Kriging \\
-cd ST-Window-Kriging \\
+git clone https://github.com/mariejuhl/ST-Window-Kriging 
+
+cd ST-Window-Kriging 
+
 pip install -r requirements.txt
 
 
