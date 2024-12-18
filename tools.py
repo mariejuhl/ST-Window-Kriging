@@ -171,7 +171,7 @@ def ST_Window_Kriging(xtime,l3,grid=None, n_days=5, hs_range=(0, 220, 11), ht_ra
         Z_        = np.zeros(len(grid_))
         Z_error   = np.zeros(len(grid_))
 
-        for i in tqdm(range(0,len(grid_)), mininterval= 60):
+        for i in tqdm(range(0,len(grid_))):
             
             if np.isnan(grid_.sla.values[i])==True:
                 Z_[i] = np.nan;Z_error[i]= np.nan

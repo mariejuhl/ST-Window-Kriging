@@ -10,24 +10,22 @@ The approach $^1$ is based on Ordinary Kriging in a moving $\pm$ 5-day time wind
 
 ### Installation 
 Provided that Git, python/pip, and Jupyter-Notebook are installed: 
-1) Make a new Python environment and activate it:
 
-python -m venv OK-ST
-source OK-ST/bin/activate (Linux/Mac) or OK-ST\Scripts\activate (Windows)
-   
-2) Clone the repository and go into the directory created:
+1) Clone the repository and go into the directory created:
 
 git clone https://github.com/mariejuhl/ST-Window-Kriging 
 cd ST-Window-Kriging
 
-3) Install requirements:
+2) Make a new Environment and activate:
+   
+conda env create --file OK_ST.yml
+conda activate OK-ST
 
-pip install -r requirements.txt
-
-4) open *ST-Window-Kriging.ipynb* in Jupyter Notebook, VSCode, or other:
+3) Open *ST-Window-Kriging.ipynb* in Jupyter Notebook, VSCode, or other:
+   
 jupyter-notebook ST-Window-Kriging.ipynb
 
-5) Happy Kriging! 
+4) Happy Kriging! 
    
    
 ### Usage 
