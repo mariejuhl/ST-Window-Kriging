@@ -8,4 +8,4 @@ seaborn==0.13.2
 setuptools==69.5.1
 tqdm==4.64.1
 xarray==2022.11.0
-netCDFf4==1.6.1
+netCDF4==1.6.1
