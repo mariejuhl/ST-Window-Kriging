@@ -3,7 +3,9 @@
 
 
 ### Description 
-The project **ST-Window-Kriging** available in Jupyter Notebook format can be used to produce daily Sea Level Anomalie Grids from along-track satellite altimetry data for California in 2018. The approach is based on Ordinary Kriging in a moving $\pm$ 5 days time window around the target day. Kriging is done building a empirical variogram from the observations (along-track data) and fitting a sum-metric semi-variogram model, which is the base for the Kriging matrix. The approach uses along-track data from CMEMS as input data (https://doi.org/10.48670/moi-00146) and produced gridded data comparable to their maps (https://doi.org/10.48670/moi-00149).
+The project **ST-Window-Kriging** available in Jupyter Notebook format can be used to produce daily Sea Level Anomalie Grids from along-track satellite altimetry data for California in 2018. The gridded data are published at SEANOE under https://doi.org/10.17882/103947.
+
+The approach is based on Ordinary Kriging in a moving $\pm$ 5 days time window around the target day. Kriging is done building a empirical variogram from the observations (along-track data) and fitting a sum-metric semi-variogram model, which is the base for the Kriging matrix. For details on Kriging we recommend literature listed below. The approach uses along-track data from CMEMS as input data (https://doi.org/10.48670/moi-00146) and produced gridded data comparable to their maps (https://doi.org/10.48670/moi-00149).
 
 
 ### Installation 
@@ -36,3 +38,9 @@ The function *ST_Window_Kriging* will be executed for all days in *run_time*, wh
 
 ### Contact
 mariechristin.juhl@tum.de
+
+
+### Recommended Literature on Kriging 
+
+Wackernagel, H. (2003). Ordinary Kriging. In: Multivariate Geostatistics. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-662-05294-5_11
+
