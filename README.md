@@ -5,7 +5,7 @@
 ### Description 
 The project **ST-Window-Kriging** available in Jupyter Notebook format can be used to produce daily Sea Level Anomalie Grids from along-track satellite altimetry data for California in 2018. The gridded data are published at SEANOE under https://doi.org/10.17882/103947.
 
-The approach $^1$ is based on Ordinary Kriging in a moving $\pm$ 5 days time window around the target day. Kriging is done building a empirical variogram from the observations (along-track data) and fitting a sum-metric semi-variogram model, which is the base for the Kriging matrix. For details on Kriging we recommend literature $^2^3$ listed below. The approach uses along-track data from CMEMS as input data (https://doi.org/10.48670/moi-00146) and produced gridded data comparable to their maps (https://doi.org/10.48670/moi-00149).
+The approach $^1$ is based on Ordinary Kriging in a moving $\pm$ 5 days time window around the target day. Kriging is done building a empirical variogram from the observations (along-track data) and fitting a sum-metric semi-variogram model, which is the base for the Kriging matrix. For details on Kriging we recommend literature $^2$ listed below. The approach uses along-track data from CMEMS as input data (https://doi.org/10.48670/moi-00146) and produced gridded data comparable to their maps (https://doi.org/10.48670/moi-00149).
 
 
 ### Installation 
@@ -39,12 +39,14 @@ The function *ST_Window_Kriging* will be executed for all days in *run_time*, wh
 ### Literature 
 
 $^1$ Paper connected to the approach: 
+
 Juhl, M.-C., Passaro, M., Dettmering, D. (tba): Regional daily sea level maps from Multi-mission Altimetry using Space-time Window Kriging (submitted to Advances in Space Research)
 
 $^2$ Basics of Kriging:
+
 Heuvelink, G.B.M., Pebesma, E., Gräler, B. (2017). Space-Time Geostatistics. In: Shekhar, S., Xiong, H., Zhou, X. (eds) Encyclopedia of GIS. Springer, Cham. https://doi.org/10.1007/978-3-319-17885-1_1647
 
-$^3$ Example of Window Block Kriging:
+Example of Window Block Kriging:
 Tadić, J. M., Qiu, X., Yadav, V., and Michalak, A. M.: Mapping of satellite Earth observations using moving window block kriging, Geosci. Model Dev., 8, 3311–3319, https://doi.org/10.5194/gmd-8-3311-2015, 2015.
 
 ### Contact
