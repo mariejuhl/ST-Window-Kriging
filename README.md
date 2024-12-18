@@ -14,11 +14,13 @@ Provided that Git, python/pip, and Jupyter-Notebook are installed:
 1) Clone the repository and go into the directory created:
 
 git clone https://github.com/mariejuhl/ST-Window-Kriging 
+
 cd ST-Window-Kriging
 
 2) Make a new Environment and activate:
    
 conda env create --file OK_ST.yml
+
 conda activate OK-ST
 
 3) Open *ST-Window-Kriging.ipynb* in Jupyter Notebook, VSCode, or other:
