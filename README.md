@@ -50,9 +50,9 @@ The function *ST_Window_Kriging* will be executed for all days in *run_time*, wh
 
 ### Literature 
 
-$^1$Paper connected to the approach: 
+$^1$ Paper connected to the approach: 
 
-Juhl, M.-C., Passaro, M., Dettmering, D. (TBA): Regional daily sea level maps from Multi-mission Altimetry using Space-time Window Kriging (submitted to Advances in Space Research)
+Juhl, M.-C., Passaro, M., Dettmering, D. (tba): Regional daily sea level maps from Multi-mission Altimetry using Space-time Window Kriging (submitted to Advances in Space Research in December 2024)
 
 $^2$ Basics of Kriging:
 
@@ -62,6 +62,8 @@ Example of Window Block Kriging:
 Tadić, J. M., Qiu, X., Yadav, V., and Michalak, A. M.: Mapping of satellite Earth observations using moving window block kriging, Geosci. Model Dev., 8, 3311–3319, https://doi.org/10.5194/gmd-8-3311-2015, 2015.
 
 ### Contact
+
+Feel free to contact me via email:
 
 mariechristin.juhl@tum.de
 
