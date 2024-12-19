@@ -9,7 +9,7 @@ The approach $^1$ is based on Ordinary Kriging in a moving $\pm$ 5-day time wind
 
 
 ### Installation 
-Provided that Git, python/pip, and Jupyter-Notebook are installed: 
+Provided that Git, python, and conda are installed: Open Terminal and follow the instructions: 
 
 <u> 1) Clone the repository and go into the directory created: </u>
 
@@ -50,7 +50,7 @@ The function *ST_Window_Kriging* will be executed for all days in *run_time*, wh
 
 ### Literature 
 
-$^1$ Paper connected to the approach: 
+$^1$Paper connected to the approach: 
 
 Juhl, M.-C., Passaro, M., Dettmering, D. (TBA): Regional daily sea level maps from Multi-mission Altimetry using Space-time Window Kriging (submitted to Advances in Space Research)
 
